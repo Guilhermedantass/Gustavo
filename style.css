@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+html, body, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body{
+    width: 99dvw;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+.header{
+    width: 99vw;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    background-color: #C1ABAD;
+    justify-content: space-between;
+
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+   
+    
+}
+
+.main .menu {
+    border-bottom: 2px solid white;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+
+.main{
+    flex-wrap: wrap;
+    width: 99vw;
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+.main-section{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    gap: 40px;
+
+}
+.main-section-text{
+    color: white;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section-text h2{
+    font-family:'Inter', sans-serif;
+    text-shadow: 2px 2px black;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main-section-text p{
+    font-family:'Inter', sans-serif;
+    text-shadow: 2px 2px black;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.main-section-img {
+    max-height: 350px;
+    
+}
+
+.person-section{
+    font-family:'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    height: 80vh;
+    color: white;
+}
+.person-section-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.person-section-card{
+    
+    width: 250px;
+    height: 370px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.person-section-title, .person-section-subtitle {
+    font-size: 20px;
+    font-weight: 200;
+    text-shadow: 2px 2px 2px black;
+}
+
+.person-section-title{
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.person-section-subtitle{
+    border-top: 2px solid white;
+    padding-top: 10px;
+}
