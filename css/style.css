@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+html, body, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+}
+
+
+body{
+    width: 99dvw;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   height: 100%;
+}
+
+.header{
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #C1ABAD;
+    padding-left: 550px ;
+}
+
+#logo {
+    margin-top: 15px;
+}
+
+#cadastro {
+    padding: 3px 4px;
+    font-size: 0.5rem;
+    background-color: #A7A7A7;
+    margin:15px;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 7px;
+    position: absolute;
+    right: 150px;
+    transition: 0.3s;
+}
+
+#entre {
+    font-size: 0.5rem;
+    padding: 3px 4px;
+    background-color: #A7A7A7;
+    margin: 15px;
+    color: #fff;
+    position: absolute;
+    right: 70px;
+    border: 1px solid black;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.main .menu {
+    border-bottom: 2px solid white;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+
+.main{
+    flex-wrap: wrap;
+    width: 99vw;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+.menu{
+    width: 100vw;
+}
+
+.main-section{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    gap: 40px;
+
+}
+.main-section-text{
+    color: white;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section-text h2{
+    font-family:'Inter', sans-serif;
+    text-shadow: 2px 2px black;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main-section-text p{
+    font-family:'Inter', sans-serif;
+    text-shadow: 2px 2px black;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.main-section-img {
+    max-height: 350px;
+    
+}
+
+.person-section{
+    font-family:'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    height: 80vh;
+    color: white;
+}
+.person-section-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.person-section-title, .person-section-subtitle {
+    font-size: 20px;
+    font-weight: 200;
+    text-shadow: 2px 2px 2px black;
+}
+
+.person-section-title{
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.person-section-subtitle{
+    border-top: 2px solid white;
+    padding-top: 10px;
+}
+#junte-se {
+    padding: 3px 4px;
+    background-color: #A7A7A7;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+#personagem1 {
+    width: 250px;
+    height: 370px;
+    background-color: transparent;
+    border-radius: 20px;
+    background-image: url("../img/group144.png");
+    background-size: cover;
+}
+
+#personagem2 {
+    width: 250px;
+    height: 370px;
+    background-color: transparent;
+    border-radius: 20px;
+    background-image: url("../img/group1441.png");
+    background-size: cover;
+}
+
+#personagem3 {
+    width: 250px;
+    height: 370px;
+    background-color: transparent;
+    border-radius: 20px;
+    background-image: url("../img/group145.png");
+    background-size: cover;
+}
+
+#personagem4 {
+    width: 250px;
+    height: 370px;
+    background-color: transparent;
+    border-radius: 20px;
+    background-image: url("../img/group146.png");
+    background-size: cover;
+}
+
+#personagem5 {
+    width: 250px;
+    height: 370px;
+    background-color: transparent;
+    border-radius: 20px;
+    background-image: url("../img/group147.png");
+    background-size: cover;
+}
+
+#junte-se:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#entre:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#cadastro:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul a::after {
+    content: "";
+    background-color: #000;
+    height: 3px;
+    margin: 0 auto;
+    display: block;
+    width: 0%;
+    transition: 0.3s;
+}
+
+ul a:hover::after {
+    width: 100%;
+}
+
+.cadastro{
+    background-image: url('../img/cadastro.svg');
+    width: 22vw;
+    height:75vh;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: black;
+    display: none;
+
+}
+.tela{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    display: none;
+}
+
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: black;
+    
+}
+
+.formLogin h2{
+    font-family: "Intel";
+    font-weight: 200;
+    border-bottom: 1px solid red;
+}
+
+.formLogin div input{
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    margin-left: 10px;
+    padding-left: 15px;
+}
+
+.formLogin a{
+    color: black;
+}
+
+.fechar{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    cursor: pointer;
+}

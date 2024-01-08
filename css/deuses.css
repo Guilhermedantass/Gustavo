@@ -1,0 +1,89 @@
+html, body, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+}
+
+body{
+    width: 99dvw;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+.header{
+    flex-wrap: wrap;
+    display: flex;
+    background-color: #C1ABAD;
+    padding-left: 550px ;
+}
+
+#logo {
+    margin-top: 15px;
+}
+
+#cadastro {
+    padding: 3px 4px;
+    font-size: 0.5rem;
+    background-color: #A7A7A7;
+    margin:15px;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 7px;
+    position: absolute;
+    right: 150px;
+}
+
+#entre {
+    font-size: 0.5rem;
+    padding: 3px 4px;
+    background-color: #A7A7A7;
+    margin: 15px;
+    color: #fff;
+    position: absolute;
+    right: 70px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.main .menu {
+    border-bottom: 2px solid white;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+
+.main{
+    flex-wrap: wrap;
+    width: 99vw;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 1000px;
+}
+
+ul a::after {
+    content: "";
+    background-color: #000;
+    height: 3px;
+    margin: 0 auto;
+    display: block;
+    width: 0%;
+    transition: 0.3s;
+}
+
+ul a:hover::after {
+    width: 100%;
+}

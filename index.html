@@ -3,50 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <section class="header">
-        <div></div>
-        <img src="img/logo.svg" alt="">
-        <div class="header-menu">
-            <button>Cadrastrar-se</button>
-            <button>Entre</button>
+    <div class="header">
+        <a href="index.html">
+            <div id="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+        </a>
+        <div onclick="Cadastro()">
+            <div id="cadastro">
+                <h1>CADASTRAR-SE</h1>
+            </div>
         </div>
-    </section>
+        <div onclick="Cadastro()">
+            <div id="entre">
+                <h2>ENTRE</h2>
+            </div>
+        </div>
+    </div>
     <section class="main">
         <div class="menu">
             <ul class="menu-lista">
-                <li><a href="">PERSONAGEM</a></li>
-                <li><a href="">REGRAS</a></li>
-                <li><a href="">RAÇAS</a></li>
-                <li><a href="">CLASSES</a></li>
-                <li><a href="">ORIGENS</a></li>
-                <li><a href="">DEUSES</a></li>
-                <li><a href="">GUIA DE NOVOS JOGADORES</a></li>
-            </ul>
+                <li><a href="personagens.html">PERSONAGENS</a></li>
+                <li><a href="regras.html">REGRAS</a></li>
+                <li><a href="racas.html">RAÇAS</a></li>
+                <li><a href="classes.html">CLASSES</a></li>
+                <li><a href="origens.html">ORIGENS</a></li>
+                <li><a href="deuses.html">DEUSES</a></li>
         </div>
-        <div class="main-section">
+        <div class="main-section" >
             <div class="main-section-text">
                 <h2>JUNTE-SE A ESSA <br> AVENTURA!</h2>
                 <p>Procurando por um lugar para se divertir com seus amigos usando
                     sistema de Tormenta 20!!!</p>
-                <button>JUNTE-SE</button>
+                <a href="cadastro.html">
+                    <div id="junte-se">
+                        <h1>JUNTE-SE</h1>
+                    </div>
+                </a>
             </div>
             <img class="main-section-img" src="img/cart.png" alt="">
         </div>
         <div class="person-section">
             <h2 class="person-section-title">ESCOLHA SEU PERSONAGEM</h2>
             <div class="person-section-cards">
-                <div class="person-section-card"></div>
-                <div class="person-section-card"></div>
-                <div class="person-section-card"></div>
-                <div class="person-section-card"></div>
-                <div class="person-section-card"></div>
+                <div id="personagem1"></div>
+                <div id="personagem2"></div>
+                <div id="personagem3"></div>
+                <div id="personagem4"></div>
+                <div id="personagem5"></div>
             </div>
-            <h2 class="person-section-subtitle">CRIE SEU PERSONAGEM</h2>
+            <a href="minhaficha.html">
+                <h2 class="person-section-subtitle">CRIE SEU PERSONAGEM</h2>
+            </a>
         </div>
     </section>
-</body>
+    <div class="cadastro" id="cc">
+            <div onclick="Cadastro()" class="fechar">X</div>
+            <form method="POST" class="formLogin">
+                <h2>Cadastre-se</h2>
+            <div>
+                <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            </div>
+            <div><label for="password">Senha</label>
+                <input type="password" placeholder="Digite sua senha" />
+            </div>
+            <p href="/">Esqueci minha senha</p>
+            <div>
+                <input type="submit" value="Acessar" class="btn" />
+            </div>
+        </form>
+
+    </div>
+    <div class="tela" id="tela">
+
+    </div>
+
+    <script src="js/script.js"></script></body>
 </html>
